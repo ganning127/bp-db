@@ -1,4 +1,4 @@
-const connectionString = "DefaultEndpointsProtocol=https;AccountName=ganningstorage;AccountKey=Oe40unfX1izdwX1wVplaEFmF/KKgPMq0odks9J2D1gObHNu1IR1fKOOL5oNQe88XTSVHjzZVhMDfA2rrhT3sjQ==;EndpointSuffix=core.windows.net";
+const connectionString = process.env.CONNECTION_STRING
 const { BlobServiceClient } = require("@azure/storage-blob");
 const fetch = require('node-fetch');
 
